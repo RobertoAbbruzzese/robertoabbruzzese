@@ -37,7 +37,8 @@ L'utente ha il controllo totale su una pipeline di elaborazione asincrona:
 *   🛡️ **Nodo Sentinel:** Validazione e sicurezza.
 *   ⚖️ **Nodo Equinox:** Bilanciamento e sintesi creativa.
 
-**[QUI METTERò TRA POCO UN LINK ALLA TUA DOCUMENTAZIONE O VIDEO]**
+**[QUI METTERò LINK ALLA TUA DOCUMENTAZIONE O VIDEO]**
+QUESTE FOTO SONO DI UNA VERSIONE " DEV " 
 <img width="1805" height="855" alt="ModelAgentIA" src="https://github.com/user-attachments/assets/076b0405-8ad0-49db-b786-04774a5843f9" />
 
 <img width="1801" height="845" alt="ModelAgentIA2" src="https://github.com/user-attachments/assets/b80324f9-621d-47f6-9f27-431917cada3e" />
@@ -47,7 +48,7 @@ L'utente ha il controllo totale su una pipeline di elaborazione asincrona:
 <img width="1795" height="853" alt="ModelAgentIAmemoriavettoriale2" src="https://github.com/user-attachments/assets/055e7bb3-650b-4302-ba91-bb53c80e97e3" />
 
 
-
+I VIDEO SOTTO SONO FATTI CON LA STESSA STRUTTURA MA CON UNA SCHERMATA PERSONALE DA " DEBUG " (VERSIONE " MADRE " ) DOVE HO IL QUADRO COMPLETO DI TUTTO E LA GESTIONE DI TUTTO MA IL FUNZIONAMENTO INTERNO è LO STESSO DI QUELLO DELLE FOTO:
 
 ![maia-ezgif com-optimize](https://github.com/user-attachments/assets/b867104d-a73b-4039-9635-402eb4d776cb)
 

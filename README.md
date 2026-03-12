@@ -176,10 +176,6 @@ exit
 - Ti serve la persistenza dei risultati tra sessioni senza configurare un database.  
 - Vuoi accedere all’app da smartphone/tablet sulla stessa rete con un semplice server statico.
 
-**Quando preferire le alternative:**  
-- Vuoi eseguire modelli completamente offline → **LM Studio** o **GPT4All**.  
-- Hai bisogno di una knowledge base aziendale con RAG avanzato → **AnythingLLM**.  
-- Vuoi supporto per OpenAI, Anthropic Claude o decine di altri provider → le alternative offrono più scelta.
 
 ---
 

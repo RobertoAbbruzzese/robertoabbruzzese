@@ -1,9 +1,11 @@
-### Ciao, sono Roberto Abbruzzese 👋
+Ciao, sono Roberto Abbruzzese 👋
 
-L evoluzione di domani, oggi. L IA sovrana.
-TOTALE SICUREZZA CHIAVI API SALVATE IN LOCALE (OPZIONALE: CRIPTATE) - TU USI LA TUA CHIAVE NESSUN VINCOLO - NESSUN VINCOLO DI MODELLO O DI CHIAVI API -CLIENTSIDE (WEB) - ORCHESTRAZIONE E AGENTI SPECIALIZZATI - ALLOCAZIONE CACHE ALTERNATIVA E NON VINCOLATA AI 100MB - 
+Vi presento Il mio progetto principale: Model-AgentIA 🧠 ⚡ (1 Mese di lavoro all' incirca) 
+L evoluzione di domani, oggi. L IA sovrana: 
 
-### 🔭 Il mio progetto principale: Model-AgentIA (1 Mese di lavoro all' incirca) 
+TOTALE SICUREZZA CHIAVI API SALVATE IN LOCALE (OPZIONALE: CRIPTATE)  -  TU USI LA TUA CHIAVE NESSUN VINCOLO  -  NESSUN VINCOLO DI MODELLO  -  NESSUN VINCOLO DI CHIAVI API  -  CLIENTSIDE (WEB)  -  ORCHESTRAZIONE E AGENTI SPECIALIZZATI FUNZIONANTE  -  ALLOCAZIONE CACHE ALTERNATIVA E NON VINCOLATA AI 100MB  -  SICUREZZA TOTALE TUTTO SUL PC  -  GESTIONE TOTALE DEI DATI  -  GESTIONE TOTALE MEMORIA (VETTORIALE) CON PESI E LA POSSIBILITà DI CARICARE/CANCELLARE JSON  -  SPECIALIZAZZIONE E VALIDAZIONE OUTPUT CERTIFICATA CON TUTTA LA LOGICA E LA CONVALIDAZIONE -  FILE PERSISTENTI RECUPERABILI E ANCHE OUTPUT GENERATO  -  NESSUN VINCOLO HARDWARE  -  TUTTO " GIRA " SULLA RAM  -  TOTALE CONTROLLO DEI TOKEN STIMA E CONSUMI  -  OTTIMIZAZZIONE DEI TOKEN DOPO OGNI OUTPUT  -  LLM DA REMOTO E COMUNICAZIONE CONDIVISIONE FILE TRA DISPOSITIVI (SI FUNZIONA OFFLINE)  -  
+
+🧠 ⚡ Il mio progetto principale: Model-AgentIA (1 Mese di lavoro all' incirca) 🧠 ⚡
 
 ModelAgentIA racchiude tutto quello che oggi è presente con i problemi per quanto riguarda llm in locale; con la mia versione Client-Side pensata e concepita su un PC come il mio datato, è stato qualcosa di meraviglioso.
 
@@ -47,6 +49,8 @@ Ovviamente ha un allocazione della memoria diversa visto che chrome è limitata 
 
 Su che hardware gira ed è stato creato: 
 HARDWARE DEL MIO PC FISSO: DESKTOP-JS7ICJ5 Processore (CPU): Modello: AMD FX-4300 Architettura: Quad-Core (Vishera) Frequenza di Clock: 3.80 GHz Memoria RAM: Capacità Totale: 12,0 GB Frequenza Rilevata: 333 MHz Sottosistema Video (GPU): Modello: NVIDIA GeForce GT 1030 Memoria Video Dedicata: 2 GB VRAM Archiviazione (Storage): Unità 1 (SSD): TEAM L3 EVO SSD 120GB Unità 2 (HDD): ST9320320AS Capacità Complessiva: ~410 GB rilevati logicamente. Sistema Operativo: Versione: Windows 10/11 Pro Architettura: 64 bit (x64-based processor) 
+
+🧠 --> 🤖 --> 🌐 --> 🕸️ --> ✅💯
 
 
 

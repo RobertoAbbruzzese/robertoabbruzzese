@@ -205,7 +205,7 @@ Le seguenti funzionalità sono in fase di valutazione e **non ancora implementat
 
 
 ![maia-ezgif com-optimize](https://github.com/user-attachments/assets/a3d44cda-15ad-4c14-a9e8-c80e1783e286)
-https://github.com/user-attachments/assets/2db21b29-2c6f-4d48-9ba5-a43fbd3eaecf
+
 
 
 ## Note sulla sicurezza

@@ -29,10 +29,7 @@ Un'architettura che coordina nodi specializzati (Aurora, Spectrum, Sentinel, Equ
 
 ### 🛠️ Cosa uso
 [![AI](https://img.shields.io/badge/AI-Gemini%20|%20Groq%20|%20DeepSeek-blue)]()
-[![JavaScript](https://img.shields.io/badge/Code-JavaScript-F7DF1E?logo=javascript&logoColor=white)]()
-[![HTML5](https://img.shields.io/badge/Web-HTML5-E34F26?logo=html5&logoColor=white)]()
-[![CSS3](https://img.shields.io/badge/Web-CSS3-1572B6?logo=css3&logoColor=white)]()
-E qualsiasi chiave API volendo, e qualsiasi modello, volendo.
+E qualsiasi chiave API volendo, con qualsiasi modello.
 ---
 
 ### 📊 Le mie statistiche GitHub

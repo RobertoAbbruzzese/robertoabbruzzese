@@ -208,6 +208,10 @@ Le seguenti funzionalità sono in fase di valutazione e **non ancora implementat
 
 
 
+https://github.com/user-attachments/assets/32f448ea-ed29-49f7-85ec-dc627ae8c6af
+
+
+
 ## Note sulla sicurezza
 
 - Nella modalità client‑side, le chiavi API sono salvate in `localStorage` e vengono inviate **direttamente** ai provider (Google, Groq, DeepSeek). Non passano mai per server intermedi.

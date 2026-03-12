@@ -23,6 +23,15 @@ Un'architettura che coordina nodi specializzati (Aurora, Spectrum, Sentinel, Equ
 
 <img width="1795" height="853" alt="ModelAgentIAmemoriavettoriale2" src="https://github.com/user-attachments/assets/055e7bb3-650b-4302-ba91-bb53c80e97e3" />
 
+
+
+
+![maia-ezgif com-optimize](https://github.com/user-attachments/assets/b867104d-a73b-4039-9635-402eb4d776cb)
+
+
+https://github.com/user-attachments/assets/71acf3b2-3f54-4e6c-b932-eef853657f3d
+
+
 ---
 
 ### 🛠️ Cosa uso

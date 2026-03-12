@@ -46,6 +46,8 @@ E qualsiasi chiave API volendo, con qualsiasi modello.
 
 ![Visitors](https://gitstrength.netlify.app/api/visitor-count?key=[RobertoAbbruzzese])
 ---
+Su che hardware gira ed è stato creato: 
+HARDWARE DEL MIO PC FISSO: DESKTOP-JS7ICJ5 Processore (CPU): Modello: AMD FX-4300 Architettura: Quad-Core (Vishera) Frequenza di Clock: 3.80 GHz Memoria RAM: Capacità Totale: 12,0 GB Frequenza Rilevata: 333 MHz Sottosistema Video (GPU): Modello: NVIDIA GeForce GT 1030 Memoria Video Dedicata: 2 GB VRAM Archiviazione (Storage): Unità 1 (SSD): TEAM L3 EVO SSD 120GB Unità 2 (HDD): ST9320320AS Capacità Complessiva: ~410 GB rilevati logicamente. Sistema Operativo: Versione: Windows 10/11 Pro Architettura: 64 bit (x64-based processor)
 
 ### 📫 Come contattarmi
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?logo=linkedin)](https://linkedin.com/in/[il-tuo-profilo])

@@ -196,6 +196,17 @@ Le seguenti funzionalità sono in fase di valutazione e **non ancora implementat
 - [ ] Supporto per modelli audio (es. Whisper via Groq).
 
 ---
+---
+<img width="1801" height="845" alt="ModelAgentIA2" src="https://github.com/user-attachments/assets/bbf05ffd-6ba9-490c-b0da-4f75ffc410ae" />
+<img width="1807" height="853" alt="ModelAgentIAmemoriavettoriale" src="https://github.com/user-attachments/assets/b5e9484f-d41f-4b36-87b3-cb10a1479e64" />
+<img width="1795" height="853" alt="ModelAgentIAmemoriavettoriale2" src="https://github.com/user-attachments/assets/d20f460e-a83c-42c3-95b3-359ad74e0039" />
+
+
+
+
+![maia-ezgif com-optimize](https://github.com/user-attachments/assets/a3d44cda-15ad-4c14-a9e8-c80e1783e286)
+https://github.com/user-attachments/assets/2db21b29-2c6f-4d48-9ba5-a43fbd3eaecf
+
 
 ## Note sulla sicurezza
 

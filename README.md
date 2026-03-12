@@ -1,110 +1,205 @@
-Ciao, sono Roberto Abbruzzese 👋
+# MODELAGENTIA
 
-Vi presento Il mio progetto principale: Model-AgentIA 🧠 ⚡ (1 Mese di lavoro all' incirca) 
-L evoluzione di domani, oggi. L IA sovrana: 
+## Cos'è in una frase
 
-TOTALE SICUREZZA CHIAVI API SALVATE IN LOCALE (OPZIONALE: CRIPTATE)  -  TU USI LA TUA CHIAVE NESSUN VINCOLO  -  NESSUN VINCOLO DI MODELLO  -  NESSUN VINCOLO DI CHIAVI API  -  CLIENTSIDE (WEB)  -  ORCHESTRAZIONE E AGENTI SPECIALIZZATI FUNZIONANTE  -  ALLOCAZIONE CACHE ALTERNATIVA E NON VINCOLATA AI 100MB  -  SICUREZZA TOTALE TUTTO SUL PC  -  GESTIONE TOTALE DEI DATI  -  GESTIONE TOTALE MEMORIA (VETTORIALE) CON PESI E LA POSSIBILITà DI CARICARE/CANCELLARE JSON  -  SPECIALIZAZZIONE E VALIDAZIONE OUTPUT CERTIFICATA CON TUTTA LA LOGICA E LA CONVALIDAZIONE -  FILE PERSISTENTI RECUPERABILI E ANCHE OUTPUT GENERATO  -  NESSUN VINCOLO HARDWARE  -  TUTTO " GIRA " SULLA RAM  -  TOTALE CONTROLLO DEI TOKEN STIMA E CONSUMI  -  OTTIMIZAZZIONE DEI TOKEN DOPO OGNI OUTPUT  -  LLM DA REMOTO E COMUNICAZIONE CONDIVISIONE FILE TRA DISPOSITIVI (SI FUNZIONA OFFLINE) -  AGENTI E STRUTTURA FUNZIONANTE ANCHE DA REMOTO  -  AGGIUNGERE NODI SENZA VINCOLI HARDWARE
-
----
----
-
-ModelAgentIA racchiude tutto quello che oggi è presente con i problemi per quanto riguarda llm in locale; problematiche attuali aziendali (privacy, corruzione hardware) e persistenti (allucinazione e gestione JSON).Con la mia versione Client-Side pensata e concepita su un PC datato come il mio.Scomponendo ognuna di queste problematiche e rendendo tutto un punto di forza.
-
-Ora so che siete curiosi di sapere come ho affrontato tutti i problemi presenti oggi in un unico " pugno ". 
-Vi spiego:
-
-*1 Problema chiavi API esposte, dati che passano su server e non diretto controllo sul motore in locale.
----
-*ModelAgentIA fa girare tutto sul tuo pc, usi le TUE chiavi api, l unica chiamata che avviene è quella dell agente sul server API, non ha nessun vincolo. Può solo espandere il suo codice e implementare tutto ciò che vogliamo e non avrà mai il controllo totale del tuo pc ma sei TU a scegliere che JSON caricare e cosa deve fare.La gestione token dopo ogni risposta viene ottimizzata pensata per non fare " spreco " di token, c'è una logica dietro che ci permette la comunicazione e la gestione degli output per non avere errori o output incompleti.*
-
-
-2 Problema hardware: modelli migliori, hardware migliori; i cosidetti " NODI " che amplificano il carico su gli hardware.
----
-*ModelAgentIA non compete con i modelli, non ha queste "esigenze" così alte; ModelAgentIA li integra, li adatta, li perfeziona. Non ha un vincolo sul modello in termini di hardware, scrivendo poche righe di codice integriamo ogni provider e ogni modello, includendo anche un mix di modelli per avere un output degno dei migliori modelli esistenti, con una gestione dell output studiata e dettagliata. I cosidetti "NODI", le "SKILL" noi le adattiamo in maniera diversa " <title>MODELAGENTIA</title> " scrivendole... Abbiamo anche la possibilità di scaricare un llm sul nostro hardware e farlo funzionare OFFLINE.*
-
-
-3 Problema comunicazione e condivisione tra dispositivi
----
-*Con un llm locale abbiamo la possibilità di salvare i task e i risultati in un database comune, I client potrebbero così caricare i dati condivisi e vedere le elaborazioni altrui.*
-
-
-4 QUESTIONE ALLUCINAZIONI inventano informazioni plausibili ma false, Retrieval (RAG) difficile da ottimizzare.
-*ModelAgentIA ha un architettura studiata, ma una gestione più semplice, più sicura, gestita da NOI. Abbiamo la possibilità (come vedete dalle foto) di accedere alla memoria vettoriale, in questa, abbiamo la COMPLETA GESTIONE dei nostri file JSON, possiamo: caricare file json, ottimizazzione della memoria per eliminare duplicati o simili, eliminare singoli file, eliminare tutti i JSON.. e poi... finalmente, possiamo dare un " peso " e un " valore " di quanto deve essere influente un JSON nelle risposte. SI, è STATO PATCHATO ANCHE QUESTO.*
-
-
-5 Prompt Injection/Sicurezza dei dati per corruzione hardware.
-Con ModelAgentIA sei tu a scegliere cosa fargli fare, io per esempio, sto lavorando ad implementare una ricerca semntica per il suo upgrade e a PROPORMI migliorie, con l apposito " bottone " di conferma per applicare le modifiche.
-
-
-6 Orchestrazione/multi-agent.
-*Ovviamente non manca neanche, con un sistema più strutturato e rinforzato, c'è un VERO sistema di agenti FUNZIONANTE, già nello stato base, com'è stato scritto, presenta stastische alte (si può specializzare o anche rinforzare ho già qualche idea), non c'è solo un sistema pensato per il multi agent, c'è un sistema di comunicazione, confronto e validazione studiato e funzionante, in base al prompt inserito, verrà scelto " quello specializzato " in base alle parole chiave, in modo da avere sicuramente un lavoro finale degno di orchestrazione.*
-
-NOTE FINALI:
-
-- Ha un allocazione della memoria diversa (visto che chrome è limitata a 100mb) e viene salvato TUTTO lì. 
-
-- Abbiamo la possibilità di avere i BLOB recuperabili, e recuperabile anche qualsiasi allegato o link all interno da "recuperare". Ovviamente abbiamo la possibilità di cancella la "cache" stesso tramite schermata web. 
-
-- Possiamo esportare intere sessioni di dati elaborati e come li hanno elaborati, nella versione debugger ho un quadro molto più completo, vedo cosa fanno come ragionano che scelte prendono e perchè.
-
-- Possiamo scegliere di usare TUTTI i modelli per un output o sceglierne solo 1. supporta già funzioni per geneare video immagini e link senza errori ( recuperabile anche dai blolb) 
-
-- Per una maggiora sicurezza, in caso di hardware compromesso da parte di terzi, con un comando powershell criptiamo le nostre chiavi salvate localmente in modo da renderle illegibili ma la pagina web le leggerà e funzionerà correttamente (in web è implementato il mascheramento della chiave API).
-
-- Ha già presente una struttura modulare integrata per una possibile scompattazione in ES6
+Un’interfaccia web a file singolo per orchestrare più agenti AI in sequenza, integrando modelli di linguaggio, generazione di immagini e video, con una pipeline di validazione a più livelli. Può funzionare interamente nel browser (client‑side) oppure essere servita da un semplice server per abilitare l’accesso da altri dispositivi e, opzionalmente, estendere le funzionalità con un backend personalizzato.
 
 ---
-Su che hardware gira ed è stato creato: 
-HARDWARE DEL MIO PC FISSO: DESKTOP-JS7ICJ5 Processore (CPU): Modello: AMD FX-4300 Architettura: Quad-Core (Vishera) Frequenza di Clock: 3.80 GHz Memoria RAM: Capacità Totale: 12,0 GB Frequenza Rilevata: 333 MHz Sottosistema Video (GPU): Modello: NVIDIA GeForce GT 1030 Memoria Video Dedicata: 2 GB VRAM Archiviazione (Storage): Unità 1 (SSD): TEAM L3 EVO SSD 120GB Unità 2 (HDD): ST9320320AS Capacità Complessiva: ~410 GB rilevati logicamente. Sistema Operativo: Versione: Windows 10/11 Pro Architettura: 64 bit (x64-based processor) 
-🧠 --> 🤖 --> 🌐 --> 🕸️ --> ✅💯
----
 
+## Il problema che risolve
 
-[⚠️ Il codice sorgente non è ancora pubblico, ma puoi vedere l'architettura e una demo qui sotto.]
+Quando si lavora con modelli AI tramite le loro interfacce ufficiali, ogni conversazione è isolata, non c’è memoria tra sessioni e si è costretti a copiare manualmente gli output da un servizio all’altro. Inoltre le risposte di un singolo modello possono soffrire di allucinazioni o superficialità perché generate in un unico passaggio.
 
-*   🧠 **Nodo Aurora:** Logica e ragionamento strutturato.
-*   ⚡ **Nodo Spectrum:** Ottimizzazione delle performance.
-*   🛡️ **Nodo Sentinel:** Validazione e sicurezza.
-*   ⚖️ **Nodo Equinox:** Bilanciamento e sintesi creativa.
+MODELAGENTIA affronta questi limiti organizzando il lavoro in una **pipeline multi‑agente** dove diversi ruoli (analista, esecutore, validatore, giuria) collaborano per produrre una risposta finale più robusta e ragionata. I risultati vengono salvati in una memoria persistente nel browser, rendendoli riutilizzabili in sessioni future.
 
-**[QUI METTERò LINK ALLA TUA DOCUMENTAZIONE O VIDEO]**
-
-QUESTE FOTO SONO DI UNA VERSIONE " DEV " 
-
-<img width="1805" height="855" alt="ModelAgentIA" src="https://github.com/user-attachments/assets/076b0405-8ad0-49db-b786-04774a5843f9" />
-
-<img width="1801" height="845" alt="ModelAgentIA2" src="https://github.com/user-attachments/assets/b80324f9-621d-47f6-9f27-431917cada3e" />
-
-<img width="1807" height="853" alt="ModelAgentIAmemoriavettoriale" src="https://github.com/user-attachments/assets/3806160a-38b5-4665-b33a-7946f589149d" />
-
-<img width="1795" height="853" alt="ModelAgentIAmemoriavettoriale2" src="https://github.com/user-attachments/assets/055e7bb3-650b-4302-ba91-bb53c80e97e3" />
-
-
-
-
-I VIDEO SOTTO SONO FATTI CON LA STESSA STRUTTURA MA CON UNA SCHERMATA PERSONALE DA " DEBUG " (VERSIONE " MADRE " ) DOVE HO IL QUADRO COMPLETO DI TUTTO E LA GESTIONE DI TUTTO MA IL FUNZIONAMENTO INTERNO è LO STESSO DI QUELLO DELLE FOTO:
+Servendo il file tramite un semplice server web statico (es. con Python) puoi accedervi da qualsiasi dispositivo sulla stessa rete e, volendo, sviluppare un backend personalizzato per eseguire modelli locali o condividere dati tra più utenti.
 
 ---
-![maia-ezgif com-optimize](https://github.com/user-attachments/assets/b867104d-a73b-4039-9635-402eb4d776cb)
+
+## Come funziona (schema semplice)
+
+Il sistema opera secondo una gerarchia definita **Jury Refiner**:
+
+```
+[Tu scrivi un task]
+        ↓
+[Pianificatore] – analizza il task e decide il percorso
+        ↓
+┌────────────────────────────────────┐
+│  LIVELLO 1 – Esperti               │
+│  (Logica, Performance, Dati, Creatività) │
+│  – propongono soluzioni parallele   │
+└────────────────────────────────────┘
+        ↓
+┌────────────────────────────────────┐
+│  LIVELLO 2 – Validatore Critico    │
+│  – identifica falle e contraddizioni│
+└────────────────────────────────────┘
+        ↓
+┌────────────────────────────────────┐
+│  LIVELLO 3 – Giuria                 │
+│  – valuta fattibilità, rischi, equilibrio │
+└────────────────────────────────────┘
+        ↓
+┌────────────────────────────────────┐
+│  LIVELLO 4 – Sintetizzatore Finale  │
+│  – produce la risposta definitiva   │
+└────────────────────────────────────┘
+        ↓
+[Output finale + link per scaricare]
+```
+
+Tutte le chiamate AI avvengono direttamente dal browser verso i provider (Gemini, Groq, DeepSeek). Le tue chiavi API rimangono nel dispositivo e vengono salvate in modo sicuro nel `localStorage`.
+
+### Modalità di esecuzione
+
+- **Locale / Client‑side** – apri il file `TEST.html` direttamente dal browser. Tutto gira sul tuo computer.
+- **Con server statico** – avvii un semplice server web (es. `python -m http.server`) sulla porta 8080 e accedi al file via `http://127.0.0.1:8080/TEST.html`. Questo permette di usare l’applicazione da altri dispositivi sulla stessa rete (es. smartphone o tablet) e mantiene tutte le funzionalità client‑side.
+- **Con backend personalizzato** – puoi sviluppare un vero backend (ad esempio in Python, Node.js) che implementi le API attese da MODELAGENTIA (endpoint `/api/task`, `/api/status`, ecc.). In questo modo puoi:
+  - Eseguire modelli locali (es. tramite Ollama, vLLM) senza bisogno di chiavi API.
+  - Condividere task, risultati e memoria tra più dispositivi.
+  - Aggiungere nuovi nodi, agenti o regole scrivendo poche righe di codice (flessibilità totale).
+
 ---
-https://github.com/user-attachments/assets/71acf3b2-3f54-4e6c-b932-eef853657f3d
+
+## Cosa serve per usarlo
+
+### Solo client‑side (file aperto direttamente)
+- Un browser moderno (Chrome, Firefox, Edge, Safari recenti) che supporti IndexedDB e `localStorage`.
+- Almeno una chiave API tra:
+  - **Google Gemini** ([aistudio.google.com](https://aistudio.google.com/)) – gratuito con limiti
+  - **Groq Cloud** ([console.groq.com](https://console.groq.com/)) – gratuito con limiti
+  - **DeepSeek** ([platform.deepseek.com](https://platform.deepseek.com/)) – a pagamento, costi contenuti
+- Connessione internet attiva (le chiamate API avvengono in rete).
+
+### Con server statico (per accesso da più dispositivi)
+- Python installato (o qualsiasi altro server web statico).
+- I dispositivi devono essere sulla stessa rete locale.
+
+### Con backend personalizzato (per modelli locali e collaborazione)
+- Un server (locale o remoto) che implementi le API attese da MODELAGENTIA (endpoint `/api/health`, `/api/task`, `/api/status`, ecc.).
+- I modelli locali devono essere accessibili dal backend (es. tramite Ollama, vLLM, o integrazioni personalizzate).
+- Nessuna chiave API necessaria se si usano solo modelli locali.
+
 ---
 
-🛠️ Cosa uso
-[![AI](https://img.shields.io/badge/AI-Gemini%20|%20Groq%20|%20DeepSeek-blue)]()
-E qualsiasi chiave API volendo, con qualsiasi modello.
+## Come installarlo
+
+### Solo client‑side (browser)
+1. **Scarica il file** `TEST.html` da questo repository.
+2. **Aprilo** con il tuo browser (doppio clic o trascina nella finestra).
+3. Seleziona un provider cliccando sui badge (GEMINI, GROQ, DEEP SEEK).
+4. Incolla la tua chiave API nel campo e premi **Salva**.
+5. Scrivi un task nell’area centrale e premi **ESEGUI PROCESSO SINCRONIZZATO**.
+
+Tutti i dati (chiavi, memoria, checkpoint) rimangono sul tuo computer e sono persistenti tra le sessioni.
+
+### Con server statico (per accesso da altri dispositivi)
+1. Apri un terminale nella cartella dove hai salvato `TEST.html`.
+2. Avvia un semplice server HTTP (es. con Python):
+   ```batch
+   python -m http.server 8080 --bind 127.0.0.1
+   ```
+3. Apri il browser all’indirizzo `http://127.0.0.1:8080/TEST.html`.
+4. (Opzionale) Per accedere da altri dispositivi sulla stessa rete, sostituisci `127.0.0.1` con l’IP locale del tuo computer (es. `192.168.1.10`) e assicurati che il firewall permetta la connessione sulla porta 8080.
+
+**Esempio di script batch (Windows)**  
+Crea un file `avvia_server.bat` con il seguente contenuto:
+
+```batch
+@echo off
+title Modelagentia Server
+:: Uccide eventuali processi python residui
+taskkill /f /im python.exe 2>nul
+timeout /t 1 >nul
+:: Avvia il server sull'IP locale
+echo Avvio in corso...
+start python -m http.server 8080 --bind 127.0.0.1
+timeout /t 2 >nul
+:: Apre direttamente il browser
+start http://127.0.0.1:8080/TEST.html
+exit
+```
+
+### Con backend personalizzato (per modelli locali e collaborazione)
+1. Sviluppa un server che esponga le API attese da MODELAGENTIA (vedi il codice in `MODELAGENTIA.Adapter` per i dettagli degli endpoint).
+2. Configuralo per ascoltare sulla porta desiderata (es. 8080).
+3. Nel file `TEST.html`, imposta `MODELAGENTIA.Config.useBackend = true` e, se necessario, modifica `apiBase` per puntare al tuo server.
+4. Avvia il server e apri il file come al solito. Le richieste verranno inoltrate al backend, che può eseguire modelli locali e condividere lo stato tra più utenti.
+
 ---
 
-### 📊 Le mie statistiche GitHub
-[![GitHub Streak](https://gitstrength.netlify.app/api/card?username=[RobertoAbbruzzese])](https://gitstrength.netlify.app)
+## Stato attuale del progetto
 
-[![Top Linguaggi](https://github-readme-stats.vercel.app/api/top-langs/?username=[RobertoAbbruzzese]&layout=compact&theme=dark)](https://github.com/anuraghazra/github-readme-stats)
+### ✅ Funziona oggi (client‑side)
+- Pipeline multi‑agente con livelli L1‑L4 e generazione di output testuale.
+- Supporto per i provider **Gemini**, **Groq**, **DeepSeek**.
+- Fallback automatico tra modelli dello stesso provider (es. se `gemini‑2.0‑flash` non risponde, prova `gemini‑2.5‑flash`).
+- Generazione di immagini (Imagen) e video (Veo) tramite API Gemini.
+- Memoria persistente: i task e i risultati vengono salvati in IndexedDB e possono essere richiamati in sessioni future.
+- Pannello di gestione della memoria vettoriale (visualizza, modifica, cancella checkpoint, regola pesi).
+- Download dei risultati come file con link rigenerabili anche dopo il refresh.
+- Statistiche in tempo reale (latenza media, token consumati per provider).
+- Esportazione e importazione dello stato in formato JSON.
 
-![Visitors](https://gitstrength.netlify.app/api/visitor-count?key=[RobertoAbbruzzese])
+### 🔧 In sviluppo / limitazioni note
+- La generazione video dipende dalla disponibilità del modello `veo‑3.1‑generate‑preview` nel tuo account Gemini.
+- Non esiste ancora un sistema di autenticazione per l’accesso al backend; chiunque possa raggiungere il server può inviare task.
+- L’interfaccia non è ottimizzata per schermi piccoli (mobile).
+- Le chiavi API salvate in `localStorage` sono leggibili da chiunque abbia accesso fisico al computer o ai DevTools.
+
+### 🧠 Modalità backend personalizzato
+- Il codice client prevede la connessione a un backend, ma il backend stesso **non è incluso** in questo repository. Puoi svilupparlo tu stesso seguendo le specifiche nell’adapter (`MODELAGENTIA.Adapter`).
+- Una volta attivo, il backend permette di:
+  - Usare modelli locali (es. Ollama) senza chiavi API.
+  - Condividere task e memoria tra più dispositivi.
+  - Aggiungere nodi personalizzati (agenti, regole) modificando poche righe di codice, sfruttando tutta la flessibilità di un linguaggio di programmazione lato server.
+
 ---
 
-### 📫 Come contattarmi
-<div class="badge-base LI-profile-badge" data-locale="it_IT" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="roberto-abbruzzese-aa3b343b6" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://it.linkedin.com/in/roberto-abbruzzese-aa3b343b6?trk=profile-badge">Roberto Abbruzzese</a></div>
-              
-[![GitHub](https://img.shields.io/badge/GitHub-@[RobertoAbbruzzese]-181717?logo=github)](https://github.com/[RobertoAbbruzzese])
+## Differenze rispetto alle alternative
 
+| | MODELAGENTIA | AnythingLLM | LM Studio | GPT4All |
+|---|---|---|---|---|
+| **Installazione** | Nessuna (file HTML) o server statico | Server locale richiesto | App da installare | App da installare |
+| **Modelli locali** | ❌ (solo via backend personalizzato) | ✅ | ✅ | ✅ |
+| **Provider cloud** | Gemini, Groq, DeepSeek | Molti | Molti | Alcuni |
+| **Agenti in sequenza** | ✅ Integrati | ❌ (singolo modello) | ❌ | ❌ |
+| **Generazione immagini** | ✅ (via Gemini) | Limitata | ❌ | ❌ |
+| **Memoria persistente** | ✅ IndexedDB (client) | ✅ (vettoriale) | ❌ | ❌ |
+| **Privacy dati** | Chiavi nel browser | Configurabile | Tutto locale | Tutto locale |
+| **Curva di apprendimento** | Bassa | Media | Bassa | Bassa |
+
+**Quando scegliere MODELAGENTIA:**  
+- Vuoi un ambiente multi‑agente che funzioni subito senza installare nulla.  
+- Lavori già con API cloud e vuoi un’interfaccia unificata.  
+- Ti serve la persistenza dei risultati tra sessioni senza configurare un database.  
+- Vuoi accedere all’app da smartphone/tablet sulla stessa rete con un semplice server statico.
+
+**Quando preferire le alternative:**  
+- Vuoi eseguire modelli completamente offline → **LM Studio** o **GPT4All**.  
+- Hai bisogno di una knowledge base aziendale con RAG avanzato → **AnythingLLM**.  
+- Vuoi supporto per OpenAI, Anthropic Claude o decine di altri provider → le alternative offrono più scelta.
+
+---
+
+## Roadmap futura
+
+Le seguenti funzionalità sono in fase di valutazione e **non ancora implementate**:
+
+- [ ] Supporto per OpenAI e Anthropic Claude (client‑side).
+- [ ] Integrazione con modelli locali via Ollama direttamente dal browser (WebGPU/WebLLM).
+- [ ] Interfaccia responsive per dispositivi mobili.
+- [ ] Editor visuale del flusso di agenti (drag & drop).
+- [ ] Sistema di autenticazione e autorizzazione per il backend multi‑utente.
+- [ ] Ricerca semantica avanzata sulla memoria vettoriale.
+- [ ] Supporto per modelli audio (es. Whisper via Groq).
+
+---
+
+## Note sulla sicurezza
+
+- Nella modalità client‑side, le chiavi API sono salvate in `localStorage` e vengono inviate **direttamente** ai provider (Google, Groq, DeepSeek). Non passano mai per server intermedi.
+- Se usi un server statico, le chiavi rimangono comunque sul dispositivo client; il server non le vede.
+- Se sviluppi un backend personalizzato, assicurati di proteggerlo (es. con un firewall o autenticazione) per evitare usi non autorizzati.
+- In ambiente condiviso, cancella sempre le chiavi dal browser dopo l’uso usando il pulsante **PULISCI CACHE** nella toolbar.

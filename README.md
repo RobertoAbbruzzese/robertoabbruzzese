@@ -210,10 +210,7 @@ Le seguenti funzionalità sono in fase di valutazione e **non ancora implementat
 ---
 <img width="1795" height="853" alt="ModelAgentIAmemoriavettoriale2" src="https://github.com/user-attachments/assets/d20f460e-a83c-42c3-95b3-359ad74e0039" />
 ---
-![maia-ezgif com-optimize](https://github.com/user-attachments/assets/a3d44cda-15ad-4c14-a9e8-c80e1783e286)
-[Guarda il video]https://github.com/user-attachments/assets/32f448ea-ed29-49f7-85ec-dc627ae8c6af
-![descrizione](https://gitstrength.netlify.app/api/visitor-count?key=[RobertoAbbruzzese])
-![descrizione](https://gitstrength.netlify.app/api/card?username=[RobertoAbbruzzese])](https://gitstrength.netlify.app)
+
 
 
 

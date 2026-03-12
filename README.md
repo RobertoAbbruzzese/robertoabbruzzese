@@ -218,9 +218,9 @@ https://github.com/user-attachments/assets/32f448ea-ed29-49f7-85ec-dc627ae8c6af
 ---
 ---
 --- 
-![Visitors](https://gitstrength.netlify.app/api/visitor-count?key=[RobertoAbbruzzese])
+(https://gitstrength.netlify.app/api/visitor-count?key=[RobertoAbbruzzese])
 ---
-[![GitHub Streak](https://gitstrength.netlify.app/api/card?username=[RobertoAbbruzzese])](https://gitstrength.netlify.app)
+(https://gitstrength.netlify.app/api/card?username=[RobertoAbbruzzese])](https://gitstrength.netlify.app)
 
 
 

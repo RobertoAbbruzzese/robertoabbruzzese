@@ -41,7 +41,7 @@ Con ModelAgentIA sei tu a scegliere cosa fargli fare, io per esempio, sto lavora
 
 NOTE FINALI:
 
-*Ovviamente ha un allocazione della memoria diversa visto che chrome è limitata a 100mb e viene salvato TUTTO lì.* 
+- Ha un allocazione della memoria diversa (visto che chrome è limitata a 100mb) e viene salvato TUTTO lì. 
 
 - Abbiamo la possibilità di avere i BLOB recuperabili, e recuperabile anche qualsiasi allegato o link all interno da "recuperare". Ovviamente abbiamo la possibilità di cancella la "cache" stesso tramite schermata web. 
 

@@ -207,6 +207,6 @@ Le seguenti funzionalità sono in fase di valutazione e **non ancora implementat
 <img width="1795" height="853" alt="ModelAgentIAmemoriavettoriale2" src="https://github.com/user-attachments/assets/d20f460e-a83c-42c3-95b3-359ad74e0039" />
 ---
 
-
+![Visitor Count](https://profile-counter.glitch.me/RobertoAbbruzzese/count.svg)
 
 

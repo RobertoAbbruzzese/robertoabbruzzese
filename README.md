@@ -5,7 +5,8 @@ L evoluzione di domani, oggi. L IA sovrana:
 
 TOTALE SICUREZZA CHIAVI API SALVATE IN LOCALE (OPZIONALE: CRIPTATE)  -  TU USI LA TUA CHIAVE NESSUN VINCOLO  -  NESSUN VINCOLO DI MODELLO  -  NESSUN VINCOLO DI CHIAVI API  -  CLIENTSIDE (WEB)  -  ORCHESTRAZIONE E AGENTI SPECIALIZZATI FUNZIONANTE  -  ALLOCAZIONE CACHE ALTERNATIVA E NON VINCOLATA AI 100MB  -  SICUREZZA TOTALE TUTTO SUL PC  -  GESTIONE TOTALE DEI DATI  -  GESTIONE TOTALE MEMORIA (VETTORIALE) CON PESI E LA POSSIBILITà DI CARICARE/CANCELLARE JSON  -  SPECIALIZAZZIONE E VALIDAZIONE OUTPUT CERTIFICATA CON TUTTA LA LOGICA E LA CONVALIDAZIONE -  FILE PERSISTENTI RECUPERABILI E ANCHE OUTPUT GENERATO  -  NESSUN VINCOLO HARDWARE  -  TUTTO " GIRA " SULLA RAM  -  TOTALE CONTROLLO DEI TOKEN STIMA E CONSUMI  -  OTTIMIZAZZIONE DEI TOKEN DOPO OGNI OUTPUT  -  LLM DA REMOTO E COMUNICAZIONE CONDIVISIONE FILE TRA DISPOSITIVI (SI FUNZIONA OFFLINE)  -  
 
-🧠 ⚡ Il mio progetto principale: Model-AgentIA (1 Mese di lavoro all' incirca) 🧠 ⚡
+---
+---
 
 ModelAgentIA racchiude tutto quello che oggi è presente con i problemi per quanto riguarda llm in locale; con la mia versione Client-Side pensata e concepita su un PC come il mio datato, è stato qualcosa di meraviglioso.
 
@@ -78,33 +79,13 @@ QUESTE FOTO SONO DI UNA VERSIONE " DEV "
 
 I VIDEO SOTTO SONO FATTI CON LA STESSA STRUTTURA MA CON UNA SCHERMATA PERSONALE DA " DEBUG " (VERSIONE " MADRE " ) DOVE HO IL QUADRO COMPLETO DI TUTTO E LA GESTIONE DI TUTTO MA IL FUNZIONAMENTO INTERNO è LO STESSO DI QUELLO DELLE FOTO:
 
-
-
-
-
-
+---
 ![maia-ezgif com-optimize](https://github.com/user-attachments/assets/b867104d-a73b-4039-9635-402eb4d776cb)
-
-
-
-
-
-
-
-
+---
 https://github.com/user-attachments/assets/71acf3b2-3f54-4e6c-b932-eef853657f3d
-
-
-
-
-
-VIDEO COMPLETO:
-2026-03-12 01-30-16.mp4
-RobertoAbbruzzese/robertoabbruzzese/2026-03-12 01-30-16.mp4
-
 ---
 
-### 🛠️ Cosa uso
+🛠️ Cosa uso
 [![AI](https://img.shields.io/badge/AI-Gemini%20|%20Groq%20|%20DeepSeek-blue)]()
 E qualsiasi chiave API volendo, con qualsiasi modello.
 ---

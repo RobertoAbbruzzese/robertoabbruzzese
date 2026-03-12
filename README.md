@@ -1,33 +1,43 @@
 ### Ciao, sono Roberto Abbruzzese 👋
-
-Costruisco **sistemi multi-agente** e orchestro modelli AI per risolvere problemi complessi. Mi piace analizzare le esigenze attuali nel mondo dell IA e trovare soluzioni significative.
-
 ---
 
-### 🔭 Il mio progetto principale: Model-AgentIA
-Un'architettura che coordina nodi specializzati (Aurora, Spectrum, Sentinel, Equinox) per analisi di task, generazione di immagini e video.
+### 🔭 Il mio progetto principale: Model-AgentIA (1 Mese di lavoro all' incirca) 
+ModelAgentIA racchiude tutto quello che oggi è presente con i problemi per quanto riguarda llm in locale; con la mia versione Client-Side pensata e concepita su un PC come il mio datato, è stato qualcosa di meraviglioso.
+Ora so che siete curiosi di sapere come ho affrontato tutti i problemi presenti oggi in un unico " pugno ". 
+Vi spiego:
 
-I moderni sistemi multi-agente soffrono spesso di tre criticità bloccanti: **instabilità dei socket di rete** (Porta 8080 occupata), **vulnerabilità dei dati locali** (chiavi API in chiaro) e **blocchi di sicurezza del browser** (CORS/Origin). Model-AgentIA nasce per abbattere queste barriere, fornendo un'architettura client-side che trasforma un hardware standard in una stazione di ricerca forense.
+*1 Problema chiavi API esposte, dati e non diretto controllo sul motore in locale.
+ModelAgentIA fa girare tutto sul tuo pc, usi le TUE chiavi api, l unica chiamata che avviene è quella dell agente sul server API, non ha nessun vincolo può solo espandere il suo codice e implementare tutto ciò che vogliamo e non avrà mai il controllo totale del tuo pc ma sei TU a scegliere che JSON caricare e cosa deve fare.La gestione token dopo ogni risposta viene ottimizzata pensata per non fare " spreco " di token, c'è una logica dietro che ci permette la comunicazione e la gestione degli output per non avere errori.
 
-Il sistema si basa su una filosofia di **Efficienza Lineare**: invece di pesanti framework strutturali, Model-AgentIA utilizza uno "Scheletro" leggero dove i nodi logici vengono scritti in righe di codice ottimizzate. Questo garantisce prestazioni superiori rispetto ai sistemi tradizionali, minimizzando il carico sulla CPU e massimizzando la velocità di risposta degli agenti.
+2 Problema hardware: modelli migliori, hardware migliori; i cosidetti " NODI " che amplificano il carico su gli hardware.
+ModelAgentIA non compete con i modelli, non ha queste esigenze così alte; ModelAgentIA li integra, li adatta, li perfeziona. Non ha un vincolo sul modello in termini di hardware, noi integriamo ogni provider e ogni modello, includendo anche una un mix di modelli per avere un output degno dei migliori modelli esistenti, con una gestione dell output studiata e dettagliata. I cosidetti " NODI " i tanto amati, le " SKILL " noi le adattiamo in maniera diversa " <title>MODELAGENTIA</title> " scrivendole... siamo NOI a decidere.Quasi dimenticavo... abbiamo anche la possibilità di scaricare un llm sul nostro hardware e farlo funzionare OFFLINE.
 
-Per garantire che gli agenti comunichino senza interferenze del browser, il sistema opera come una vera Web App locale.
+3 Problema comunicazione e condivisione tra dispositivi
+Con un llm locale abbiamo la possibilità di salvare i task e i risultati in un database comune, I client potrebbero così caricare i dati condivisi e vedere le elaborazioni altrui.
 
-* **Protocollo di Avvio:** Il server dedicato bypassa le restrizioni CORS e garantisce che ogni modulo carichi istantaneamente.
-* **Gestione Automatica Collisioni:** Un sistema di pulizia dinamica rileva se la porta 8080 è occupata da processi "fantasma" e la libera prima di ogni sessione, garantendo un uptime del 100%.
+4 QUESTIONE ALLUCINAZIONI inventano informazioni plausibili ma false, Retrieval (RAG) difficile da ottimizzare.
+ModelAgentIA ha un architettura studiata, ma una gestione più semplice, più sicura, gestita da NOI. Abbiamo la possibilità (come vedete dalle foto) di accedere alla memoria vettoriale, in questa, abbiamo la COMPLETA GESTIONE dei nostri file JSNO, possiamo: caricare file json, ottimizazzione della memoria per eliminare duplicati, eliminare singoli file, eliminare tutti i JSON.. e poi... finalmente, possiamo dare un " peso " e un " valore " di quanto deve essere influente un JSON nelle risposte. SI, è STATO PATCHATO ANCHE QUESTO.
 
-A differenza dei client standard che espongono le chiavi API, Model-AgentIA integra un protocollo di **Hardening Forense**:
+5 Prompt Injection/Sicurezza dei dati per corruzione hardware.
+Con ModelAgentIA sei tu a scegliere cosa fargli fare, io per esempio, sto lavorando ad implementare una ricerca semntica per il suo upgrade e a PROPORMI migliorie, con l apposito " bottone " di conferma per applicare le modifiche.
 
-* Le chiavi non vengono salvate in testo semplice.
-* Sfruttando la crittografia nativa del sistema operativo, le API Key vengono legate all'identità SID dell'utente. Anche in caso di accesso fisico al database locale, i dati rimangono indecifrabili per chiunque non sia il proprietario della sessione.
+6 Orchestrazione/multi-agent.
+Ovviamente non manca neanche, con un sistema più strutturato e rinforzato, c'è un VERO sistema di agenti FUNZIONANTE, già nello stato base, com'è stato scritto, presenta stastische alte (si può specializzare o anche rinforzare ho già qualche idea), non c'è solo un sistema pensato per il multi agent, c'è un sistema di comunicazione e confronto e validazione in base al prompt inserito, verrà scelto " quello specializzato " in base alle parole chiave, in modo da avere sicuramente un lavoro finale degno di orchestrazione.
 
-L'utente ha il controllo totale su una pipeline di elaborazione asincrona:
+NOTE FINALI:
 
-* **Pipeline a Nodi:** Processi sequenziali (da Aurora a Equinox) che trasformano un task grezzo in un output convalidato.
-* **Nodi in Linea:** La possibilità di scrivere la logica dei nodi "in riga" permette una latenza quasi nulla, rendendo il sistema fluido anche su macchine datate come la mia.
-* **Gestione Memoria Vettoriale:** Sfruttare il pannello di controllo per monitorare i checkpoint e pulire i duplicati, mantenendo il sistema reattivo e la cache ottimizzata.
+Ovviamente ha un allocazione della memoria diversa visto che chrome è limitata a 100mb e viene salvato TUTTO lì. 
 
-* "Model-AgentIA non è solo un'interfaccia; è uno scheletro prestazionale dove ogni riga di codice è un nodo di potenza pura, progettato per chi non accetta compromessi tra sicurezza e velocità."
+Abbiamo la possibilità di avere i BLOB recuperabili, e recuperabile anche qualsiasi allegato o link all interno da "recuperare".
+
+
+
+
+
+
+
+
+
 
 * 
 [⚠️ Il codice sorgente non è ancora pubblico, ma puoi vedere l'architettura e una demo qui sotto.]
@@ -70,6 +80,7 @@ E qualsiasi chiave API volendo, con qualsiasi modello.
 
 ![Visitors](https://gitstrength.netlify.app/api/visitor-count?key=[RobertoAbbruzzese])
 ---
+
 Su che hardware gira ed è stato creato: 
 HARDWARE DEL MIO PC FISSO: DESKTOP-JS7ICJ5 Processore (CPU): Modello: AMD FX-4300 Architettura: Quad-Core (Vishera) Frequenza di Clock: 3.80 GHz Memoria RAM: Capacità Totale: 12,0 GB Frequenza Rilevata: 333 MHz Sottosistema Video (GPU): Modello: NVIDIA GeForce GT 1030 Memoria Video Dedicata: 2 GB VRAM Archiviazione (Storage): Unità 1 (SSD): TEAM L3 EVO SSD 120GB Unità 2 (HDD): ST9320320AS Capacità Complessiva: ~410 GB rilevati logicamente. Sistema Operativo: Versione: Windows 10/11 Pro Architettura: 64 bit (x64-based processor)
 

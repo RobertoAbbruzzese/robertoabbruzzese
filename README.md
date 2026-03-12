@@ -104,6 +104,7 @@ E qualsiasi chiave API volendo, con qualsiasi modello.
 ---
 
 ### 📫 Come contattarmi
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?logo=linkedin)](https://linkedin.com/in/[www.linkedin.com/in/roberto-abbruzzese-aa3b343b6])
+<div class="badge-base LI-profile-badge" data-locale="it_IT" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="roberto-abbruzzese-aa3b343b6" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://it.linkedin.com/in/roberto-abbruzzese-aa3b343b6?trk=profile-badge">Roberto Abbruzzese</a></div>
+              
 [![GitHub](https://img.shields.io/badge/GitHub-@[RobertoAbbruzzese]-181717?logo=github)](https://github.com/[RobertoAbbruzzese])
 

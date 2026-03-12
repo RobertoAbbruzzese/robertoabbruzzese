@@ -14,19 +14,22 @@ Ora so che siete curiosi di sapere come ho affrontato tutti i problemi presenti 
 Vi spiego:
 
 *1 Problema chiavi API esposte, dati che passano su server e non diretto controllo sul motore in locale.
-ModelAgentIA fa girare tutto sul tuo pc, usi le TUE chiavi api, l unica chiamata che avviene è quella dell agente sul server API, non ha nessun vincolo. Può solo espandere il suo codice e implementare tutto ciò che vogliamo e non avrà mai il controllo totale del tuo pc ma sei TU a scegliere che JSON caricare e cosa deve fare.La gestione token dopo ogni risposta viene ottimizzata pensata per non fare " spreco " di token, c'è una logica dietro che ci permette la comunicazione e la gestione degli output per non avere errori o output incompleti.
+---
+*ModelAgentIA fa girare tutto sul tuo pc, usi le TUE chiavi api, l unica chiamata che avviene è quella dell agente sul server API, non ha nessun vincolo. Può solo espandere il suo codice e implementare tutto ciò che vogliamo e non avrà mai il controllo totale del tuo pc ma sei TU a scegliere che JSON caricare e cosa deve fare.La gestione token dopo ogni risposta viene ottimizzata pensata per non fare " spreco " di token, c'è una logica dietro che ci permette la comunicazione e la gestione degli output per non avere errori o output incompleti.*
 
 
 2 Problema hardware: modelli migliori, hardware migliori; i cosidetti " NODI " che amplificano il carico su gli hardware.
-ModelAgentIA non compete con i modelli, non ha queste "esigenze" così alte; ModelAgentIA li integra, li adatta, li perfeziona. Non ha un vincolo sul modello in termini di hardware, scrivendo poche righe di codice integriamo ogni provider e ogni modello, includendo anche un mix di modelli per avere un output degno dei migliori modelli esistenti, con una gestione dell output studiata e dettagliata. I cosidetti "NODI", le "SKILL" noi le adattiamo in maniera diversa " <title>MODELAGENTIA</title> " scrivendole... Abbiamo anche la possibilità di scaricare un llm sul nostro hardware e farlo funzionare OFFLINE.
+---
+*ModelAgentIA non compete con i modelli, non ha queste "esigenze" così alte; ModelAgentIA li integra, li adatta, li perfeziona. Non ha un vincolo sul modello in termini di hardware, scrivendo poche righe di codice integriamo ogni provider e ogni modello, includendo anche un mix di modelli per avere un output degno dei migliori modelli esistenti, con una gestione dell output studiata e dettagliata. I cosidetti "NODI", le "SKILL" noi le adattiamo in maniera diversa " <title>MODELAGENTIA</title> " scrivendole... Abbiamo anche la possibilità di scaricare un llm sul nostro hardware e farlo funzionare OFFLINE.*
 
 
 3 Problema comunicazione e condivisione tra dispositivi
-Con un llm locale abbiamo la possibilità di salvare i task e i risultati in un database comune, I client potrebbero così caricare i dati condivisi e vedere le elaborazioni altrui.
+---
+*Con un llm locale abbiamo la possibilità di salvare i task e i risultati in un database comune, I client potrebbero così caricare i dati condivisi e vedere le elaborazioni altrui.*
 
 
 4 QUESTIONE ALLUCINAZIONI inventano informazioni plausibili ma false, Retrieval (RAG) difficile da ottimizzare.
-ModelAgentIA ha un architettura studiata, ma una gestione più semplice, più sicura, gestita da NOI. Abbiamo la possibilità (come vedete dalle foto) di accedere alla memoria vettoriale, in questa, abbiamo la COMPLETA GESTIONE dei nostri file JSON, possiamo: caricare file json, ottimizazzione della memoria per eliminare duplicati o simili, eliminare singoli file, eliminare tutti i JSON.. e poi... finalmente, possiamo dare un " peso " e un " valore " di quanto deve essere influente un JSON nelle risposte. SI, è STATO PATCHATO ANCHE QUESTO.
+*ModelAgentIA ha un architettura studiata, ma una gestione più semplice, più sicura, gestita da NOI. Abbiamo la possibilità (come vedete dalle foto) di accedere alla memoria vettoriale, in questa, abbiamo la COMPLETA GESTIONE dei nostri file JSON, possiamo: caricare file json, ottimizazzione della memoria per eliminare duplicati o simili, eliminare singoli file, eliminare tutti i JSON.. e poi... finalmente, possiamo dare un " peso " e un " valore " di quanto deve essere influente un JSON nelle risposte. SI, è STATO PATCHATO ANCHE QUESTO.*
 
 
 5 Prompt Injection/Sicurezza dei dati per corruzione hardware.
@@ -34,11 +37,11 @@ Con ModelAgentIA sei tu a scegliere cosa fargli fare, io per esempio, sto lavora
 
 
 6 Orchestrazione/multi-agent.
-Ovviamente non manca neanche, con un sistema più strutturato e rinforzato, c'è un VERO sistema di agenti FUNZIONANTE, già nello stato base, com'è stato scritto, presenta stastische alte (si può specializzare o anche rinforzare ho già qualche idea), non c'è solo un sistema pensato per il multi agent, c'è un sistema di comunicazione, confronto e validazione studiato e funzionante, in base al prompt inserito, verrà scelto " quello specializzato " in base alle parole chiave, in modo da avere sicuramente un lavoro finale degno di orchestrazione.
+*Ovviamente non manca neanche, con un sistema più strutturato e rinforzato, c'è un VERO sistema di agenti FUNZIONANTE, già nello stato base, com'è stato scritto, presenta stastische alte (si può specializzare o anche rinforzare ho già qualche idea), non c'è solo un sistema pensato per il multi agent, c'è un sistema di comunicazione, confronto e validazione studiato e funzionante, in base al prompt inserito, verrà scelto " quello specializzato " in base alle parole chiave, in modo da avere sicuramente un lavoro finale degno di orchestrazione.*
 
 NOTE FINALI:
 
-Ovviamente ha un allocazione della memoria diversa visto che chrome è limitata a 100mb e viene salvato TUTTO lì. 
+*Ovviamente ha un allocazione della memoria diversa visto che chrome è limitata a 100mb e viene salvato TUTTO lì.* 
 
 - Abbiamo la possibilità di avere i BLOB recuperabili, e recuperabile anche qualsiasi allegato o link all interno da "recuperare". Ovviamente abbiamo la possibilità di cancella la "cache" stesso tramite schermata web. 
 

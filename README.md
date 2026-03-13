@@ -1,202 +1,207 @@
 # MODELAGENTIA
 
-## Cos'è in una frase
+## What it is in one sentence
 
-Un’interfaccia web a file singolo per orchestrare più agenti AI in sequenza, integrando modelli di linguaggio, generazione di immagini e video, con una pipeline di validazione a più livelli. Può funzionare interamente nel browser (client‑side) oppure essere servita da un semplice server per abilitare l’accesso da altri dispositivi e, opzionalmente, estendere le funzionalità con un backend personalizzato.
-
----
-
-## Il problema che risolve
-
-Quando si lavora con modelli AI tramite le loro interfacce ufficiali, ogni conversazione è isolata, non c’è memoria tra sessioni e si è costretti a copiare manualmente gli output da un servizio all’altro. Inoltre le risposte di un singolo modello possono soffrire di allucinazioni o superficialità perché generate in un unico passaggio.
-
-MODELAGENTIA affronta questi limiti organizzando il lavoro in una **pipeline multi‑agente** dove diversi ruoli (analista, esecutore, validatore, giuria) collaborano per produrre una risposta finale più robusta e ragionata. I risultati vengono salvati in una memoria persistente nel browser, rendendoli riutilizzabili in sessioni future.
-
-Servendo il file tramite un semplice server web statico (es. con Python) puoi accedervi da qualsiasi dispositivo sulla stessa rete e, volendo, sviluppare un backend personalizzato per eseguire modelli locali o condividere dati tra più utenti.
+A single-file web interface for orchestrating multiple AI agents in sequence, integrating language models, image and video generation, with a multi-level validation pipeline. It can run entirely in the browser (client-side) or be served by a simple server to enable access from other devices and, optionally, extend functionality with a custom backend.
 
 ---
 
-## Come funziona (schema semplice)
+## The problem it solves
 
-Il sistema opera secondo una gerarchia definita **Jury Refiner**:
+When working with AI models through their official interfaces, every conversation is isolated, there is no memory between sessions, and you are forced to manually copy outputs from one service to another. Furthermore, single-model responses can suffer from hallucinations or superficiality because they are generated in a single pass.
+
+MODELAGENTIA addresses these limitations by organizing the work into a multi-agent pipeline where different roles (analyst, executor, validator, jury) collaborate to produce a more robust and reasoned final response. Results are saved in persistent memory within the browser, making them reusable in future sessions.
+
+By serving the file via a simple static web server (e.g., with Python), you can access it from any device on the same network and, if desired, develop a custom backend to run local models or share data among multiple users.
+
+---
+
+## How it works (simple diagram)
+
+The system operates according to a hierarchy defined as Jury Refiner:
 
 ```
-[Tu scrivi un task]
+[You write a task]
         ↓
-[Pianificatore] – analizza il task e decide il percorso
+[Planner] – analyzes the task and decides the path
         ↓
 ┌────────────────────────────────────┐
-│  LIVELLO 1 – Esperti               │
-│  (Logica, Performance, Dati, Creatività) │
-│  – propongono soluzioni parallele   │
+│  LEVEL 1 – Experts                 │
+│  (Logic, Performance, Data, Creativity) │
+│  – propose parallel solutions      │
 └────────────────────────────────────┘
         ↓
 ┌────────────────────────────────────┐
-│  LIVELLO 2 – Validatore Critico    │
-│  – identifica falle e contraddizioni│
+│  LEVEL 2 – Critical Validator      │
+│  – identifies flaws and contradictions│
 └────────────────────────────────────┘
         ↓
 ┌────────────────────────────────────┐
-│  LIVELLO 3 – Giuria                 │
-│  – valuta fattibilità, rischi, equilibrio │
+│  LEVEL 3 – Jury                    │
+│  – evaluates feasibility, risks, balance │
 └────────────────────────────────────┘
         ↓
 ┌────────────────────────────────────┐
-│  LIVELLO 4 – Sintetizzatore Finale  │
-│  – produce la risposta definitiva   │
+│  LEVEL 4 – Final Synthesizer       │
+│  – produces the definitive response│
 └────────────────────────────────────┘
         ↓
-[Output finale + link per scaricare]
+[Final Output + link to download]
 ```
 
-Tutte le chiamate AI avvengono direttamente dal browser verso i provider (Gemini, Groq, DeepSeek). Le tue chiavi API rimangono nel dispositivo e vengono salvate in modo sicuro nel `localStorage`.
+All AI calls occur directly from the browser to the providers (Gemini, Groq, DeepSeek). Your API keys remain on your device and are securely saved in localStorage.
 
-### Modalità di esecuzione
+### Execution Modes
 
-- **Locale / Client‑side** – apri il file `TEST.html` direttamente dal browser. Tutto gira sul tuo computer.
-- **Con server statico** – avvii un semplice server web (es. `python -m http.server`) sulla porta 8080 e accedi al file via `http://127.0.0.1:8080/TEST.html`. Questo permette di usare l’applicazione da altri dispositivi sulla stessa rete (es. smartphone o tablet) e mantiene tutte le funzionalità client‑side.
-- **Con backend personalizzato** – puoi sviluppare un vero backend (ad esempio in Python, Node.js) che implementi le API attese da MODELAGENTIA (endpoint `/api/task`, `/api/status`, ecc.). In questo modo puoi:
-  - Eseguire modelli locali (es. tramite Ollama, vLLM) senza bisogno di chiavi API.
-  - Condividere task, risultati e memoria tra più dispositivi.
-  - Aggiungere nuovi nodi, agenti o regole scrivendo poche righe di codice (flessibilità totale).
-
----
-
-## Cosa serve per usarlo
-
-### Solo client‑side (file aperto direttamente)
-- Un browser moderno (Chrome, Firefox, Edge, Safari recenti) che supporti IndexedDB e `localStorage`.
-- Almeno una chiave API tra:
-  - **Google Gemini** ([aistudio.google.com](https://aistudio.google.com/)) – gratuito con limiti
-  - **Groq Cloud** ([console.groq.com](https://console.groq.com/)) – gratuito con limiti
-  - **DeepSeek** ([platform.deepseek.com](https://platform.deepseek.com/)) – a pagamento, costi contenuti
-- Connessione internet attiva (le chiamate API avvengono in rete).
-
-### Con server statico (per accesso da più dispositivi)
-- Python installato (o qualsiasi altro server web statico).
-- I dispositivi devono essere sulla stessa rete locale.
-
-### Con backend personalizzato (per modelli locali e collaborazione)
-- Un server (locale o remoto) che implementi le API attese da MODELAGENTIA (endpoint `/api/health`, `/api/task`, `/api/status`, ecc.).
-- I modelli locali devono essere accessibili dal backend (es. tramite Ollama, vLLM, o integrazioni personalizzate).
-- Nessuna chiave API necessaria se si usano solo modelli locali.
+- **Local / Client‑side – open the TEST.html file directly in your browser. Everything runs on your computer.
+- **With static server – start a simple web server (e.g., python -m http.server) on port 8080 and access the file via http://127.0.0.1:8080/TEST.html. This allows you to use the application from other devices on the same network (e.g., smartphone or tablet) and maintains all client-side functionalities.
+- **With custom backend – you can develop a true backend (for example in Python, Node.js) that implements the APIs expected by MODELAGENTIA (endpoints /api/task, /api/status, etc.). This way you can:
+  - Run local models (e.g., via Ollama, vLLM) without needing API keys.
+  - Share tasks, results, and memory across multiple devices.
+  - Add new nodes, agents, or rules by writing a few lines of code (total flexibility).
 
 ---
 
-## Come installarlo
+## What you need to use it
 
-### Solo client‑side (browser)
-1. **Scarica il file** `TEST.html` da questo repository.
-2. **Aprilo** con il tuo browser (doppio clic o trascina nella finestra).
-3. Seleziona un provider cliccando sui badge (GEMINI, GROQ, DEEP SEEK).
-4. Incolla la tua chiave API nel campo e premi **Salva**.
-5. Scrivi un task nell’area centrale e premi **ESEGUI PROCESSO SINCRONIZZATO**.
+### Client‑side only (file opened directly)
+- A modern browser (Chrome, Firefox, Edge, recent Safari) that supports IndexedDB and localStorage.
+- At least one API key from:
+  - Google Gemini (aistudio.google.com) – free with limits
+  - Groq Cloud (console.groq.com) – free with limits
+  - DeepSeek (platform.deepseek.com) – paid, low costs
+- Active internet connection (API calls occur over the network).
 
-Tutti i dati (chiavi, memoria, checkpoint) rimangono sul tuo computer e sono persistenti tra le sessioni.
+### With static server (for access from multiple devices)
+- Python installed (or any other static web server).
+- Devices must be on the same local network.
 
-### Con server statico (per accesso da altri dispositivi)
-1. Apri un terminale nella cartella dove hai salvato `TEST.html`.
-2. Avvia un semplice server HTTP (es. con Python):
+### With custom backend (for local models and collaboration)
+- A server (local or remote) that implements the APIs expected by MODELAGENTIA (endpoints /api/health, /api/task, /api/status, etc.).
+- Local models must be accessible from the backend (e.g., via Ollama, vLLM, or custom integrations).
+- No API keys needed if using only local models.
+
+---
+
+## How to install it
+
+Client‑side only (browser)
+1. Download the file TEST.html from this repository.
+2. Open it with your browser (double-click or drag into the window).
+3. Select a provider by clicking on the badges (GEMINI, GROQ, DEEP SEEK).
+4. Paste your API key into the field and press Save.
+5. Write a task in the central area and press RUN SYNCED PROCESS.
+
+All data (keys, memory, checkpoints) remain on your computer and are persistent between sessions.
+
+With static server (for access from other devices)
+1. Open a terminal in the folder where you saved MODELAGENTIA.html.
+2. Start a simple HTTP server (e.g., with Python):
    ```batch
    python -m http.server 8080 --bind 127.0.0.1
    ```
-3. Apri il browser all’indirizzo `http://127.0.0.1:8080/TEST.html`.
-4. (Opzionale) Per accedere da altri dispositivi sulla stessa rete, sostituisci `127.0.0.1` con l’IP locale del tuo computer (es. `192.168.1.10`) e assicurati che il firewall permetta la connessione sulla porta 8080.
+3. Open your browser at http://127.0.0.1:8080/TEST.html.
+4. (Optional) To access from other devices on the same network, replace 127.0.0.1 with your computer's local IP (e.g., 192.168.1.10) and ensure the firewall allows connection on port 8080.
 
-**Esempio di script batch (Windows)**  
-Crea un file `avvia_server.bat` con il seguente contenuto:
+**Example batch script (Windows)**  
+Create a file start_server.bat with the following content:
 
 ```batch
 @echo off
 title Modelagentia Server
-:: Uccide eventuali processi python residui
+:: Kills any residual python processes
 taskkill /f /im python.exe 2>nul
 timeout /t 1 >nul
-:: Avvia il server sull'IP locale
-echo Avvio in corso...
+:: Starts the server on the local IP
+echo Starting...
 start python -m http.server 8080 --bind 127.0.0.1
 timeout /t 2 >nul
-:: Apre direttamente il browser
+:: Opens the browser directly
 start http://127.0.0.1:8080/TEST.html
 exit
 ```
 
-### Con backend personalizzato (per modelli locali e collaborazione)
-1. Sviluppa un server che esponga le API attese da MODELAGENTIA (vedi il codice in `MODELAGENTIA.Adapter` per i dettagli degli endpoint).
-2. Configuralo per ascoltare sulla porta desiderata (es. 8080).
-3. Nel file `TEST.html`, imposta `MODELAGENTIA.Config.useBackend = true` e, se necessario, modifica `apiBase` per puntare al tuo server.
-4. Avvia il server e apri il file come al solito. Le richieste verranno inoltrate al backend, che può eseguire modelli locali e condividere lo stato tra più utenti.
+### With custom backend (for local models and collaboration)
+1. Develop a server that exposes the APIs expected by MODELAGENTIA (see the code in MODELAGENTIA.Adapter for endpoint details).
+2. Configure it to listen on the desired port (e.g., 8080).
+3. In the TEST.html file, set MODELAGENTIA.Config.useBackend = true and, if necessary, modify apiBase to point to your server.
+4. Start the server and open the file as usual. Requests will be forwarded to the backend, which can execute local models and share the state among multiple users.
 
 ---
 
 ## Stato attuale del progetto
 
-### ✅ Funziona oggi (client‑side)
-- Pipeline multi‑agente con livelli L1‑L4 e generazione di output testuale.
-- Supporto per i provider **Gemini**, **Groq**, **DeepSeek**.
-- Fallback automatico tra modelli dello stesso provider (es. se `gemini‑2.0‑flash` non risponde, prova `gemini‑2.5‑flash`).
-- Generazione di immagini (Imagen) e video (Veo) tramite API Gemini.
-- Memoria persistente: i task e i risultati vengono salvati in IndexedDB e possono essere richiamati in sessioni future.
-- Pannello di gestione della memoria vettoriale (visualizza, modifica, cancella checkpoint, regola pesi).
-- Download dei risultati come file con link rigenerabili anche dopo il refresh.
-- Statistiche in tempo reale (latenza media, token consumati per provider).
-- Esportazione e importazione dello stato in formato JSON.
+### ✅ Current state of the project)
+- Multi-agent pipeline with levels L1-L4 and textual output generation.
+- Support for Gemini, Groq, DeepSeek providers.
+- Automatic fallback between models from the same provider (e.g., if gemini-2.0-flash doesn't respond, it tries gemini-2.5-flash).
+- Image (Imagen) and video (Veo) generation via Gemini API.
+- Persistent memory: tasks and results are saved in IndexedDB and can be recalled in future sessions.
+- Vector memory management panel (view, edit, delete checkpoints, adjust weights).
+- Download results as files with links that can be regenerated even after refresh.
+- Real-time statistics (average latency, tokens consumed per provider).
+- Export and import of state in JSON format.
 
-### 🔧 In sviluppo / limitazioni note
-- La generazione video dipende dalla disponibilità del modello `veo‑3.1‑generate‑preview` nel tuo account Gemini.
-- Non esiste ancora un sistema di autenticazione per l’accesso al backend; chiunque possa raggiungere il server può inviare task.
-- L’interfaccia non è ottimizzata per schermi piccoli (mobile).
-- Le chiavi API salvate in `localStorage` sono leggibili da chiunque abbia accesso fisico al computer o ai DevTools.
+### 🔧 In development / known limitations
+- Video generation depends on the availability of the veo-3.1-generate-preview model in your Gemini account.
+- There is no authentication system yet for backend access; anyone who can reach the server can send tasks.
+- The interface is not optimized for small screens (mobile).
+- API keys saved in localStorage are readable by anyone with physical access to the computer or DevTools.
 
-### 🧠 Modalità backend personalizzato
-- Il codice client prevede la connessione a un backend, ma il backend stesso **non è incluso** in questo repository. Puoi svilupparlo tu stesso seguendo le specifiche nell’adapter (`MODELAGENTIA.Adapter`).
-- Una volta attivo, il backend permette di:
-  - Usare modelli locali (es. Ollama) senza chiavi API.
-  - Condividere task e memoria tra più dispositivi.
-  - Aggiungere nodi personalizzati (agenti, regole) modificando poche righe di codice, sfruttando tutta la flessibilità di un linguaggio di programmazione lato server.
-
----
-
-## Differenze rispetto alle alternative
-
-| | MODELAGENTIA | AnythingLLM | LM Studio | GPT4All |
-|---|---|---|---|---|
-| **Installazione** | Nessuna (file HTML) o server statico | Server locale richiesto | App da installare | App da installare |
-| **Modelli locali** | ❌ (solo via backend personalizzato) | ✅ | ✅ | ✅ |
-| **Provider cloud** | Gemini, Groq, DeepSeek | Molti | Molti | Alcuni |
-| **Agenti in sequenza** | ✅ Integrati | ❌ (singolo modello) | ❌ | ❌ |
-| **Generazione immagini** | ✅ (via Gemini) | Limitata | ❌ | ❌ |
-| **Memoria persistente** | ✅ IndexedDB (client) | ✅ (vettoriale) | ❌ | ❌ |
-| **Privacy dati** | Chiavi nel browser | Configurabile | Tutto locale | Tutto locale |
-| **Curva di apprendimento** | Bassa | Media | Bassa | Bassa |
-
-**Quando scegliere MODELAGENTIA:**  
-- Vuoi un ambiente multi‑agente che funzioni subito senza installare nulla.  
-- Lavori già con API cloud e vuoi un’interfaccia unificata.  
-- Ti serve la persistenza dei risultati tra sessioni senza configurare un database.  
-- Vuoi accedere all’app da smartphone/tablet sulla stessa rete con un semplice server statico.
-
+### 🧠 Custom backend mode
+- The client code includes the connection to a backend, but the backend itself is not included in this repository. You can develop it yourself following the specifications in the adapter (MODELAGENTIA.Adapter).
+- Once active, the backend allows you to:
+  - Use local models (e.g., Ollama) without API keys.
+  - Share tasks and memory across multiple devices.
+  - Add custom nodes (agents, rules) by modifying a few lines of code, leveraging the full flexibility of a server-side programming language.
 
 ---
 
-## Roadmap futura
+## Differences compared to alternatives
 
-Le seguenti funzionalità sono in fase di valutazione e **non ancora implementate**:
+,MODELAGENTIA,AnythingLLM,LM Studio,GPT4All
+Installation,None (HTML file) or static server,Local server required,App to install,App to install
+Local Models,❌ (only via custom backend),✅,✅,✅
+Cloud Providers,"Gemini, Groq, DeepSeek",Many,Many,Some
+Sequential Agents,✅ Integrated,❌ (single model),❌,❌
+Image Generation,✅ (via Gemini),Limited,❌,❌
+Persistent Memory,✅ IndexedDB (client),✅ (vector),❌,❌
+Data Privacy,Keys in browser,Configurable,All local,All local
+Learning Curve,Low,Medium,Low,Low
 
-- [ ] Supporto per OpenAI e Anthropic Claude (client‑side).
-- [ ] Integrazione con modelli locali via Ollama direttamente dal browser (WebGPU/WebLLM).
-- [ ] Interfaccia responsive per dispositivi mobili.
-- [ ] Editor visuale del flusso di agenti (drag & drop).
-- [ ] Sistema di autenticazione e autorizzazione per il backend multi‑utente.
-- [ ] Ricerca semantica avanzata sulla memoria vettoriale.
-- [ ] Supporto per modelli audio (es. Whisper via Groq).
+**When to choose MODELAGENTIA:**  
+- You want a multi-agent environment that works immediately without installing anything. 
+- You already work with cloud APIs and want a unified interface.  
+- You need persistence of results between sessions without configuring a database.  
+- You want to access the app from smartphone/tablet on the same network with a simple static server.
 
-## Note sulla sicurezza
 
-- Nella modalità client‑side, le chiavi API sono salvate in `localStorage` e vengono inviate **direttamente** ai provider (Google, Groq, DeepSeek). Non passano mai per server intermedi.
-- Se usi un server statico, le chiavi rimangono comunque sul dispositivo client; il server non le vede.
-- Se sviluppi un backend personalizzato, assicurati di proteggerlo (es. con un firewall o autenticazione) per evitare usi non autorizzati.
-- In ambiente condiviso, cancella sempre le chiavi dal browser dopo l’uso usando il pulsante **PULISCI CACHE** nella toolbar.
+---
+
+## Future Roadmap
+
+The following features are being evaluated and are not yet implemented:
+
+[ ] Support for OpenAI and Anthropic Claude (client-side).
+
+[ ] Integration with local models via Ollama directly from the browser (WebGPU/WebLLM).
+
+[ ] Responsive interface for mobile devices.
+
+[ ] Visual agent flow editor (drag & drop).
+
+[ ] Authentication and authorization system for multi-user backend.
+
+[ ] Advanced semantic search on vector memory.
+
+[ ] Support for audio models (e.g., Whisper via Groq).
+
+## Security Notes
+
+- In client-side mode, API keys are saved in localStorage and are sent directly to the providers (Google, Groq, DeepSeek). They never pass through intermediate servers.
+- If you use a static server, the keys still remain on the client device; the server does not see them.
+- If you develop a custom backend, make sure to protect it (e.g., with a firewall or authentication) to prevent unauthorized use.
+- In a shared environment, always clear keys from the browser after use using the CLEAR CACHE button in the toolbar.
 ---
 ---
 --- 
@@ -218,8 +223,11 @@ https://github.com/user-attachments/assets/61b8677f-846d-4cfb-acff-ad53c2bf9a75
 
 
 
+---
 
+https://github.com/RobertoAbbruzzese/robertoabbruzzese/discussions/1#discussion-9634620
 
+---
 
 ![Visitors](https://komarev.com/ghpvc/?username=RobertoAbbruzzese&color=blue&style=flat-square)
 

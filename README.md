@@ -159,7 +159,7 @@ exit
 
 ## Differences compared to alternatives
 
-| MODELAGENTIA | AnythingLLM | LM Studio | GPT4All |
+               | MODELAGENTIA | AnythingLLM | LM Studio | GPT4All |
 |--------------|-------------|-----------|---------|
 | Installation | None (HTML file) or static server | Local server required | App to install | App to install |
 | Local Models | ❌ (only via custom backend) | ✅ | ✅ | ✅ |

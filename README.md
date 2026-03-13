@@ -159,15 +159,16 @@ exit
 
 ## Differences compared to alternatives
 
-,MODELAGENTIA,AnythingLLM,LM Studio,GPT4All
-Installation,None (HTML file) or static server,Local server required,App to install,App to install
-Local Models,❌ (only via custom backend),✅,✅,✅
-Cloud Providers,"Gemini, Groq, DeepSeek",Many,Many,Some
-Sequential Agents,✅ Integrated,❌ (single model),❌,❌
-Image Generation,✅ (via Gemini),Limited,❌,❌
-Persistent Memory,✅ IndexedDB (client),✅ (vector),❌,❌
-Data Privacy,Keys in browser,Configurable,All local,All local
-Learning Curve,Low,Medium,Low,Low
+| MODELAGENTIA | AnythingLLM | LM Studio | GPT4All |
+|--------------|-------------|-----------|---------|
+| Installation | None (HTML file) or static server | Local server required | App to install | App to install |
+| Local Models | ❌ (only via custom backend) | ✅ | ✅ | ✅ |
+| Cloud Providers | Gemini, Groq, DeepSeek | Many | Many | Some |
+| Sequential Agents | ✅ Integrated | ❌ (single model) | ❌ | ❌ |
+| Image Generation | ✅ (via Gemini) | Limited | ❌ | ❌ |
+| Persistent Memory | ✅ IndexedDB (client) | ✅ (vector) | ❌ | ❌ |
+| Data Privacy | Keys in browser | Configurable | All local | All local |
+| Learning Curve | Low | Medium | Low | Low |
 
 **When to choose MODELAGENTIA:**  
 - You want a multi-agent environment that works immediately without installing anything. 

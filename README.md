@@ -205,7 +205,21 @@ Le seguenti funzionalità sono in fase di valutazione e **non ancora implementat
 <img width="1807" height="853" alt="ModelAgentIAmemoriavettoriale" src="https://github.com/user-attachments/assets/b5e9484f-d41f-4b36-87b3-cb10a1479e64" />
 ---
 <img width="1795" height="853" alt="ModelAgentIAmemoriavettoriale2" src="https://github.com/user-attachments/assets/d20f460e-a83c-42c3-95b3-359ad74e0039" />
+
+...
+
+![maia-ezgif com-optimize]![vid](https://github.com/user-attachments/assets/13a11a87-f59e-4261-b141-4c5f15b4c142)
+
 ---
+
+
+
+https://github.com/user-attachments/assets/61b8677f-846d-4cfb-acff-ad53c2bf9a75
+
+
+
+
+
 
 ![Visitors](https://komarev.com/ghpvc/?username=RobertoAbbruzzese&color=blue&style=flat-square)
 

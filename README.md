@@ -169,6 +169,8 @@ exit
 | Persistent Memory | ✅ IndexedDB (client) | ✅ (vector) | ❌ | ❌ |
 | Data Privacy | Keys in browser | Configurable | All local | All local |
 | Learning Curve | Low | Medium | Low | Low |
+
+---
 **When to choose MODELAGENTIA:**  
 - You want a multi-agent environment that works immediately without installing anything. 
 - You already work with cloud APIs and want a unified interface.  

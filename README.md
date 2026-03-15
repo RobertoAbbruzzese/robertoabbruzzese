@@ -53,7 +53,6 @@ The system operates according to a hierarchy defined as **Jury Refiner**:
 All AI calls occur directly from the browser to the providers (**Gemini, Groq, DeepSeek**). Your API keys remain on your device and are securely saved in `localStorage`.
 
 ### Execution Modes
-
 * **Local / Client‑side:** Open the `TEST.html` file directly in your browser. Everything runs on your computer.
 * **With Static Server:** Start a simple web server (e.g., `python -m http.server`) on port 8080 and access via `http://127.0.0.1:8080/TEST.html`. This allows access from other devices on the same network (e.g., smartphone or tablet).
 * **With Custom Backend:** Develop a backend (Python, Node.js, etc.) that implements the MODELAGENTIA API endpoints (`/api/task`, `/api/status`). This enables:
@@ -61,30 +60,23 @@ All AI calls occur directly from the browser to the providers (**Gemini, Groq, D
 * Sharing tasks, results, and memory across multiple devices.
 * Total flexibility to add new nodes, agents, or rules.
 
-
-
 ---
 
 ## Requirements
-
 ### 1. Client‑side only
-
 * A modern browser (Chrome, Firefox, Edge, Safari) supporting **IndexedDB** and **localStorage**.
 * At least one API key from:
 * **Google Gemini** (aistudio.google.com) – Free with limits.
 * **Groq Cloud** (console.groq.com) – Free with limits.
 * **DeepSeek** (platform.deepseek.com) – Paid, low cost.
 
-
 * Active internet connection.
 
 ### 2. With Static Server
-
 * Python installed (or any other static web server).
 * Devices must be on the same local network.
 
 ### 3. With Custom Backend
-
 * A local or remote server implementing the MODELAGENTIA API specs.
 * Local models accessible from the backend (Ollama, vLLM).
 * No API keys needed if using local models exclusively.
@@ -92,9 +84,7 @@ All AI calls occur directly from the browser to the providers (**Gemini, Groq, D
 ---
 
 ## Installation & Setup
-
 ### Client‑side only
-
 1. Download `TEST.html` from this repository.
 2. Open it with your browser.
 3. Select a provider (GEMINI, GROQ, DEEP SEEK).
@@ -102,7 +92,6 @@ All AI calls occur directly from the browser to the providers (**Gemini, Groq, D
 5. Write a task and press **RUN SYNCED PROCESS**.
 
 ### With Static Server
-
 1. Open a terminal in the project folder.
 2. Start the server:
 ```bash
@@ -131,9 +120,7 @@ exit
 ---
 
 ## Project Status
-
 ### ✅ Current Features
-
 * **Multi-agent Pipeline:** L1-L4 levels with final synthesis.
 * **Multi-Provider:** Gemini, Groq, DeepSeek support.
 * **Smart Fallback:** Automatic model switching within the same provider (e.g., Gemini 2.0 -> 1.5).
@@ -143,7 +130,6 @@ exit
 * **Real-time Stats:** Latency and token consumption tracking.
 
 ### 🔧 Known Limitations / In Development
-
 * Video generation depends on `veo-3.1-generate-preview` availability in your Gemini account.
 * No native authentication for backends; use firewalls/VPNs for remote access.
 * UI is not yet fully optimized for mobile screens.
@@ -152,7 +138,6 @@ exit
 ---
 
 ## Comparison Table
-
 | Feature | MODELAGENTIA | AnythingLLM | LM Studio | GPT4All |
 | --- | --- | --- | --- | --- |
 | **Installation** | None (HTML) | Local Server | App | App |
@@ -166,7 +151,6 @@ exit
 ---
 
 ## Future Roadmap
-
 * [ ] OpenAI and Anthropic Claude support (client-side).
 * [ ] Local models via Ollama/WebGPU directly in-browser.
 * [ ] Mobile-responsive UI.
@@ -177,28 +161,20 @@ exit
 ---
 
 ## Security Notes
-
 * In client-side mode, keys are sent **directly** to providers. They never pass through intermediate servers.
 * In a shared environment, always use the **CLEAR CACHE** button to remove keys after use.
 
 ---
 
 ## License & Intellectual Property
-
 **MODELAGENTIA** is a proprietary asset of **Roberto Abbruzzese**.
 The code is public to encourage transparency and community collaboration, protected under the **CC BY-NC 4.0** license.
-
 * ❌ **NO COMMERCIAL USE:** Sale of the software or derivative works is strictly prohibited.
 * ✅ **CONTRIBUTIONS:** Pull requests are welcome to improve the project framework.
 * 🔐 **ARCHITECTURE:** All rights regarding the logical synchronization architecture remain with the author.
----
-
-
-
----
-
 # MODELAGENTIA
-[![ESEGUI APPLICAZIONE](https://img.shields.io/badge/RUN_APP-⭐_TEST.html-FFD700?style=for-the-badge&logo=esotericsoftware&logoColor=black)](https://github.com/RobertoAbbruzzese/robertoabbruzzese/blob/main/%E2%AD%90_TEST.html)
+[![ESEGUI APPLICAZIONE](https://img.shields.io/badge/RUN_APP-⭐_TEST.html-FFD700?style=for-the-badge&logo=esotericsoftware&logoColor=black)]
+(https://github.com/RobertoAbbruzzese/robertoabbruzzese/blob/main/%E2%AD%90_TEST.html)
 
 ---
 

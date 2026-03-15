@@ -182,4 +182,9 @@ The code is public to encourage transparency and community collaboration, protec
 
 ---
 
+[deepseek.TXT](https://github.com/user-attachments/files/26001778/deepseek.TXT)
+[25 DOMANDE 25 RISPOSTE.txt](https://github.com/user-attachments/files/26001779/25.DOMANDE.25.RISPOSTE.txt)
+
+---
+
 ![Visitors](https://gitstrength.netlify.app/api/visitor-count?key=RobertoAbbruzzese&color=green&style=for-the-badge)

@@ -208,15 +208,6 @@ The following features are being evaluated and are not yet implemented:
 
 
 
----
-
---- 
-
---- 
-
----
-
-
 ...
 
 ![maia-ezgif com-optimize]![vid](https://github.com/user-attachments/assets/13a11a87-f59e-4261-b141-4c5f15b4c142)
@@ -224,9 +215,7 @@ The following features are being evaluated and are not yet implemented:
 ---
 
 
-
 https://github.com/user-attachments/assets/61b8677f-846d-4cfb-acff-ad53c2bf9a75
-
 
 
 ---

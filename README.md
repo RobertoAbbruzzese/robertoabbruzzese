@@ -1,6 +1,3 @@
-Ecco una versione ottimizzata del file `README.md` in inglese. Ho curato la formattazione Markdown per garantire massima leggibilità su GitHub, utilizzando blocchi di codice, tabelle, icone descrittive e una gerarchia di intestazioni chiara.
-
-```markdown
 # MODELAGENTIA
 
 ## What it is in one sentence

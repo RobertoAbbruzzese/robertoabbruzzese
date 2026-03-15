@@ -175,8 +175,6 @@ The code is public to encourage transparency and community collaboration, protec
 # MODELAGENTIA
 [![ESEGUI APPLICAZIONE](https://img.shields.io/badge/RUN_APP-⭐_TEST.html-FFD700?style=for-the-badge&logo=esotericsoftware&logoColor=black)]
 
-(https://github.com/RobertoAbbruzzese/robertoabbruzzese/blob/main/%E2%AD%90_TEST.html)
-
 ---
 
 ![Visitors](https://gitstrength.netlify.app/api/visitor-count?key=RobertoAbbruzzese&color=green&style=for-the-badge)

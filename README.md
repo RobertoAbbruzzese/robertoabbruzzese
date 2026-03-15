@@ -182,9 +182,9 @@ The code is public to encourage transparency and community collaboration, protec
 
 ---
 
-[deepseek.TXT](https://github.com/user-attachments/files/26001778/deepseek.TXT)
+[![DeepSeek Notes](https://img.shields.io/badge/NOTES-DEEPSEEK-blue?style=flat-square&logo=gitbook&logoColor=white)](https://github.com/user-attachments/files/26001778/deepseek.TXT)  
 
-[stresstest 25.txt](https://github.com/user-attachments/files/26001798/stresstest.25.txt)
+[![Stress Test](https://img.shields.io/badge/STRESS_TEST-25_REQS-green?style=flat-square&logo=speedtest&logoColor=white)](https://github.com/user-attachments/files/26001798/stresstest.25.txt)
 
 ---
 

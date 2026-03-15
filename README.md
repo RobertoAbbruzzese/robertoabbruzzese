@@ -174,6 +174,7 @@ The code is public to encourage transparency and community collaboration, protec
 * 🔐 **ARCHITECTURE:** All rights regarding the logical synchronization architecture remain with the author.
 # MODELAGENTIA
 [![ESEGUI APPLICAZIONE](https://img.shields.io/badge/RUN_APP-⭐_TEST.html-FFD700?style=for-the-badge&logo=esotericsoftware&logoColor=black)]
+
 (https://github.com/RobertoAbbruzzese/robertoabbruzzese/blob/main/%E2%AD%90_TEST.html)
 
 ---

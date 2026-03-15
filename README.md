@@ -188,13 +188,15 @@ The code is public to encourage transparency and community collaboration, protec
 * ❌ **NO COMMERCIAL USE:** Sale of the software or derivative works is strictly prohibited.
 * ✅ **CONTRIBUTIONS:** Pull requests are welcome to improve the project framework.
 * 🔐 **ARCHITECTURE:** All rights regarding the logical synchronization architecture remain with the author.
-
 ---
+
+
+
 ---
 
 # MODELAGENTIA
-
 [![ESEGUI APPLICAZIONE](https://img.shields.io/badge/RUN_APP-⭐_TEST.html-FFD700?style=for-the-badge&logo=esotericsoftware&logoColor=black)](https://github.com/RobertoAbbruzzese/robertoabbruzzese/blob/main/%E2%AD%90_TEST.html)
 
-```
-![Visitors](https://komarev.com/ghpvc/?username=RobertoAbbruzzese&repo=robertoabbruzzese&color=brightgreen&style=for-the-badge&label=VISITE+PROGETTO)
+---
+
+![Visitors](https://komarev.com/ghpvc/?username=RobertoAbbruzzese&repo=robertoabbruzzese&label=VISITE%20PROGETTO&color=00d2ff&style=flat-square)

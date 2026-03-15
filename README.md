@@ -1,4 +1,7 @@
-# MODELAGENTIA
+# 🧠 MODELAGENTIA
+
+[![ESEGUI APPLICAZIONE](https://img.shields.io/badge/RUN_APP-⭐_TEST.html-FFD700?style=for-the-badge&logo=esotericsoftware&logoColor=black)](https://github.com/RobertoAbbruzzese/robertoabbruzzese/blob/main/%E2%AD%90_TEST.html)
+![Visitors](https://komarev.com/ghpvc/?username=RobertoAbbruzzese&repo=robertoabbruzzese&label=VISITE%20PROGETTO&color=brightgreen&style=flat-square)
 
 ## What it is in one sentence
 A single-file web interface for orchestrating multiple AI agents in sequence, integrating language models, image and video generation, with a multi-level validation pipeline. It can run entirely in the browser (client-side) or be served by a simple server to enable access from other devices and, optionally, extend functionality with a custom backend.
@@ -199,4 +202,4 @@ The code is public to encourage transparency and community collaboration, protec
 
 ---
 
-![Visitors](https://komarev.com/ghpvc/?username=RobertoAbbruzzese&repo=robertoabbruzzese&label=VISITE%20PROGETTO&color=00d2ff&style=flat-square)
+![Visitors](https://komarev.com/ghpvc/?username=RobertoAbbruzzese&repo=robertoabbruzzese&label=VISITE%20PROGETTO&color=brightgreen&style=flat-square)

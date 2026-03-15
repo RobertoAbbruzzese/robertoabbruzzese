@@ -163,11 +163,11 @@ exit
 ## Security Notes
 * In client-side mode, keys are sent **directly** to providers. They never pass through intermediate servers.
 * In a shared environment, always use the **CLEAR CACHE** button to remove keys after use.
-<img width="1805" height="821" alt="Image" src="https://github.com/user-attachments/assets/25123636-a724-446b-b3e1-49c07ee6cc82" />
 <img width="1801" height="863" alt="Image" src="https://github.com/user-attachments/assets/1a43b960-ec92-4465-83fe-4cb8e51e1578" />
 <img width="1815" height="837" alt="Image" src="https://github.com/user-attachments/assets/370ecf4a-d93e-419d-8dd5-1bb6ea01f9bc" />
 <img width="1801" height="855" alt="Image" src="https://github.com/user-attachments/assets/a22b619b-67b4-401a-b057-f7a9be476a34" />
 <img width="1805" height="853" alt="Image" src="https://github.com/user-attachments/assets/aad0cac8-db1d-49b4-9fa6-6d1902c74ea1" />
+<img width="1805" height="821" alt="Image" src="https://github.com/user-attachments/assets/25123636-a724-446b-b3e1-49c07ee6cc82" />
 
 ---
 

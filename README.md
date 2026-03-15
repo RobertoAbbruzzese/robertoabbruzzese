@@ -205,13 +205,17 @@ The following features are being evaluated and are not yet implemented:
 - If you develop a custom backend, make sure to protect it (e.g., with a firewall or authentication) to prevent unauthorized use.
 - In a shared environment, always clear keys from the browser after use using the CLEAR CACHE button in the toolbar.
 ---
+
+
+
 ---
+
 --- 
-<img width="1801" height="845" alt="ModelAgentIA2" src="https://github.com/user-attachments/assets/bbf05ffd-6ba9-490c-b0da-4f75ffc410ae" />
+
 --- 
-<img width="1807" height="853" alt="ModelAgentIAmemoriavettoriale" src="https://github.com/user-attachments/assets/b5e9484f-d41f-4b36-87b3-cb10a1479e64" />
+
 ---
-<img width="1795" height="853" alt="ModelAgentIAmemoriavettoriale2" src="https://github.com/user-attachments/assets/d20f460e-a83c-42c3-95b3-359ad74e0039" />
+
 
 ...
 
@@ -231,6 +235,16 @@ https://github.com/RobertoAbbruzzese/robertoabbruzzese/discussions/1#discussion-
 
 ---
 
+## Licenza e Proprietà Intellettuale
+Il progetto **MODELAGENTIA** è un asset proprietario di [Roberto Abbruzzese]. 
+Il codice è pubblico per favorire la trasparenza e la collaborazione della community, ma è protetto dalla licenza **CC BY-NC 4.0**.
+
+- ❌ **NO USO COMMERCIALE:** Non è permessa la vendita del software o di derivati.
+- ✅ **SI CONTRIBUTI:** Le pull request sono benvenute per migliorare lo scheletro del progetto.
+- 🔐 **ARCHITETTURA:** I diritti sull'architettura logica di sincronizzazione restano dell'autore.
+
+---
+
 ![Visitors](https://komarev.com/ghpvc/?username=RobertoAbbruzzese&color=blue&style=flat-square)
 
-
+---
